@@ -19,13 +19,15 @@ Console.WriteLine("{0} {1}",string1, string2);
 Console.WriteLine($"{string1} {string2}");
 ```
 
-We are adding DateTime to the equation here.
+We are adding DateTime to the equation here. The usage of $ and {} in the following string interpolations. We can also see various DateTime value outputs, like Only Date, Month, Year and Time in various seperators
 
 ```csharp
 DateTime dateTime1 = DateTime.Now;
-Console.WriteLine($"DateTime: {dateTime1}"); //Full Date and Time
-Console.WriteLine($"DateTime: {dateTime1:dd}"); //Only Date, dd represents DATE
-Console.WriteLine($"DateTime: {dateTime1:MM}"); //Only Month, MM represents MONTH, mm is for Minutes as seen below
-Console.WriteLine($"DateTime: {dateTime1:yyyy}"); //Only Year we could either use yy or yyyy for YEAR
-Console.WriteLine($"DateTime: {dateTime1:hh-mm}"); //
+Console.WriteLine($"Full Date Time: {dateTime1}"); //Full Date and Time
+Console.WriteLine($"Only Date: {dateTime1:dd}"); //Only Date, dd represents DATE
+Console.WriteLine($"Only Month: {dateTime1:MM}"); //Only Month, MM represents MONTH, mm is for Minutes as seen below
+Console.WriteLine($"Only Year (YY): {dateTime1:yy}, (YYYY): {dateTime1:yyyy}"); //Only Year we could either use yy or yyyy for YEAR
+Console.WriteLine("We can also print just the time and with various seperators");
+Console.WriteLine($"Only Time with : seperation : {dateTime1:hh:mm:ss}"); //Time is seperated with colon
+Console.WriteLine($"Only Time with - seperation: {dateTime1:hh-mm-ss}"); //Time is seperated with hyphen
 ```
