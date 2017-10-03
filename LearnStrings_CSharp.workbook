@@ -1,0 +1,31 @@
+---
+uti: com.xamarin.workbook
+id: d6fa9c15-4255-45f0-8578-02feb0c34fc6
+title: LearnStrings_CSharp
+platforms:
+- DotNetCore
+---
+
+## C# Strings (System.String)
+
+**STRING INTERPOLATION**
+
+```csharp
+string string1 = "Hello"; 
+string string2 = "World";
+Console.WriteLine(string1 + string2);
+Console.WriteLine(string1 + " "+ string2);
+Console.WriteLine("{0} {1}",string1, string2);
+Console.WriteLine($"{string1} {string2}");
+```
+
+We are adding DateTime to the equation here.
+
+```csharp
+DateTime dateTime1 = DateTime.Now;
+Console.WriteLine($"DateTime: {dateTime1}"); //Full Date and Time
+Console.WriteLine($"DateTime: {dateTime1:dd}"); //Only Date, dd represents DATE
+Console.WriteLine($"DateTime: {dateTime1:MM}"); //Only Month, MM represents MONTH, mm is for Minutes as seen below
+Console.WriteLine($"DateTime: {dateTime1:yyyy}"); //Only Year we could either use yy or yyyy for YEAR
+Console.WriteLine($"DateTime: {dateTime1:hh-mm}"); //
+```
