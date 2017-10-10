@@ -1,4 +1,4 @@
-# LearnCSharpStrings
+# PlayWithCSharpStrings
 A Workbook for C# String datatype
 
 Please use this workbook to play with C# String datatype. I will be updating this workbook with C# String Functions most of us use daily.
